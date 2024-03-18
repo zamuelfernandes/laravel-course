@@ -12,6 +12,6 @@ Route::get('/', function () {
 
 Route::view('/second', 'second');
 
-Route::get('/home', function () {
-    return view('home');
-});
+Route::view('home', 'home')->name('home');
+Route::view('contact', 'contact')->name('contact');
+Route::view('about', 'about')->name('about');
