@@ -12,6 +12,7 @@ Route::get('/', function () {
 
 Route::view('/second', 'second');
 
-Route::view('home', 'home')->name('home');
+// Route::view('home', 'home')->name('home');
+Route::get('home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::view('contact', 'contact')->name('contact');
 Route::view('about', 'about')->name('about');

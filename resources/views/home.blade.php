@@ -22,8 +22,10 @@
         <div class="card-body">
           <div class="small text-muted">January 1, 2023</div>
           <h2 class="card-title">Featured Post Title</h2>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque,
-            nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid
+            atque,
+            nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate
+            voluptatibus
             possimus, veniam magni quis!</p>
           <a class="btn btn-primary" href="#!">Read more →</a>
         </div>
@@ -38,7 +40,8 @@
             <div class="card-body">
               <div class="small text-muted">January 1, 2023</div>
               <h2 class="card-title h4">Post Title</h2>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque,
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                aliquid atque,
                 nulla.</p>
               <a class="btn btn-primary" href="#!">Read more →</a>
             </div>
@@ -50,7 +53,8 @@
             <div class="card-body">
               <div class="small text-muted">January 1, 2023</div>
               <h2 class="card-title h4">Post Title</h2>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque,
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                aliquid atque,
                 nulla.</p>
               <a class="btn btn-primary" href="#!">Read more →</a>
             </div>
@@ -64,7 +68,8 @@
             <div class="card-body">
               <div class="small text-muted">January 1, 2023</div>
               <h2 class="card-title h4">Post Title</h2>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque,
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                aliquid atque,
                 nulla.</p>
               <a class="btn btn-primary" href="#!">Read more →</a>
             </div>
@@ -76,7 +81,8 @@
             <div class="card-body">
               <div class="small text-muted">January 1, 2023</div>
               <h2 class="card-title h4">Post Title</h2>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque,
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                aliquid atque,
                 nulla? Quos cum ex quis soluta, a laboriosam.</p>
               <a class="btn btn-primary" href="#!">Read more →</a>
             </div>
@@ -117,25 +123,30 @@
           <div class="row">
             <div class="col-sm-6">
               <ul class="list-unstyled mb-0">
-                <li><a href="#!">Web Design</a></li>
+                @foreach($categories as $category)
+                <!-- <li><a href="#!">{{ $category }}</a></li> -->
+                <li><a href="#!">{{ $category->name }}</a></li>
+                @endforeach
+                <!-- <li><a href="#!">Web Design</a></li>
                 <li><a href="#!">HTML</a></li>
-                <li><a href="#!">Freebies</a></li>
+                <li><a href="#!">Freebies</a></li> -->
               </ul>
             </div>
-            <div class="col-sm-6">
+            <!-- <div class="col-sm-6">
               <ul class="list-unstyled mb-0">
                 <li><a href="#!">JavaScript</a></li>
                 <li><a href="#!">CSS</a></li>
                 <li><a href="#!">Tutorials</a></li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
       <!-- Side widget-->
       <div class="card mb-4">
         <div class="card-header">Side Widget</div>
-        <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and
+        <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use,
+          and
           feature the Bootstrap 5 card component!</div>
       </div>
     </div>
